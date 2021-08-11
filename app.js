@@ -10,23 +10,23 @@ calculateButton.addEventListener("click", clickHandler);
 
 function clickHandler() {
   errorHandler.style.display = "none";
-  if (billAmount.value && cashGiven.value == "number") {
-    if (billAmount.value > 0) {
-      if (billAmount.value < cashGiven.value) {
-        const amountToBeReturned = cashGiven.value - billAmount.value;
-        calculateChange(amountToBeReturned);
-      } else {
-        errorHandler.style.display = "block";
-        errorHandler.innerHTML = "Bill amount should be less than cash amount";
-      }
+  //   if (typeof billAmount.value === "number") {
+  if (billAmount.value > 0) {
+    if (billAmount.value < cashGiven.value) {
+      const amountToBeReturned = cashGiven.value - billAmount.value;
+      calculateChange(amountToBeReturned);
     } else {
       errorHandler.style.display = "block";
-      errorHandler.innerHTML = "Bill amount should be greater than 0";
+      errorHandler.innerHTML = "Bill amount should be less than cash amount";
     }
   } else {
     errorHandler.style.display = "block";
-    errorHandler.innerHTML = "Enter a valid Number";
+    errorHandler.innerHTML = "Bill amount should be greater than 0";
   }
+  //   } else {
+  //     errorHandler.style.display = "block";
+  //     errorHandler.innerHTML = "Enter a valid Number";
+  //   }
 }
 
 function calculateChange(amountToBeReturned) {
