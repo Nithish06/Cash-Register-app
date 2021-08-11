@@ -15,7 +15,34 @@
       <label for="cash">Enter Cash given : </label>
       <input id="cash" />
     </div>
-    <button id="button">Calculate the notes to be given</button>
+    <table class="change-table">
+      <caption>
+        Return Change
+      </caption>
+      <tr>
+        <th>Number of Notes</th>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+        <td class="outputTable"></td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2000</td>
+        <td>500</td>
+        <td>100</td>
+
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <div id="error"></div>
+    <button id="button">Return Change</button>
   </body>
   <script src="app.js"></script>
 </html>
