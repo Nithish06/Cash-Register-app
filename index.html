@@ -8,41 +8,46 @@
     <link rel="stylesheet" type="text/css" href="app.css" />
   </head>
   <body>
-    <h1>Cash Register App</h1>
-    <label for="bill-amount">Enter Bill Amount : </label>
-    <input id="bill-amount" />
-    <div>
-      <label for="cash">Enter Cash given : </label>
-      <input id="cash" />
-    </div>
-    <table class="change-table">
-      <caption>
-        Return Change
-      </caption>
-      <tr>
-        <th>Number of Notes</th>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-        <td class="outputTable"></td>
-      </tr>
-      <tr>
-        <th>Notes</th>
-        <td>2000</td>
-        <td>500</td>
-        <td>100</td>
+    <div class="Main-wrapper">
+      <h1>Cash Register App</h1>
+      <div>
+        <label for="bill-amount">Enter Bill Amount : </label>
+        <input id="bill-amount" />
+      </div>
 
-        <td>20</td>
-        <td>10</td>
-        <td>5</td>
-        <td>1</td>
-      </tr>
-    </table>
-    <div id="error"></div>
-    <button id="button">Return Change</button>
+      <div>
+        <label for="cash">Enter Cash given : </label>
+        <input id="cash" />
+      </div>
+      <button id="button">Return Change</button>
+      <table class="change-table">
+        <caption>
+          Change To be returned:
+        </caption>
+        <tr>
+          <th>Number of Notes</th>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+          <td class="outputTable"></td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+      <div id="error"></div>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>
